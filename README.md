@@ -136,10 +136,11 @@ I first used the Windows `ipconfig` command to identify my local IP address and 
 ```
 ipconfig
 ```
+![zenmap output](Windows_ipconfig.png)
+
+
 ## Task 2
 I then entered the subnet into Zenmap and selected **Ping Scan** to identify active hosts.
-
-![zenmap output](Windows_ipconfig.png)
 
 The example results provided in the practical identified four live hosts:
 
