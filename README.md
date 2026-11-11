@@ -118,6 +118,8 @@ dnsrecon -d networkwalks.com
 ```
 ![dnsrecon output](06-dnsrecon.png)
 
+
+
                                                                                     
 📌 **Second Project Project Overview**
 
