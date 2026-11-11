@@ -117,10 +117,7 @@ Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided in
 dnsrecon -d networkwalks.com
 ```
 ![dnsrecon output](06-dnsrecon.png)
-
-
-
-                                                                                    
+&emsp                                                                                    
 📌 **Second Project Project Overview**
 
 
