@@ -117,7 +117,8 @@ Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided in
 dnsrecon -d networkwalks.com
 ```
 ![dnsrecon output](06-dnsrecon.png)
-&emsp                                                                                    
+
+                                                                                
 📌 **Second Project Project Overview**
 
 
@@ -137,6 +138,10 @@ ipconfig
 ```
 ## Task 2
 I then entered the subnet into Zenmap and selected **Ping Scan** to identify active hosts.
+
+![zenmap output](Windows_ipconfig.png)
+
+The example results provided in the practical identified four live hosts:
 
 ![zenmap output](Windows_ipconfig.png)
 
