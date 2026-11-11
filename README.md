@@ -61,35 +61,35 @@ I then used ```whatweb``` to identify technologies used by the website. The resu
 ```
 whatweb networkwalks.com
 ```
-![whatweb output](screenshots/2_whatweb.png)
+![whatweb output](whatweb-2.png)
 
 ## Task 3
 Using ```nslookup``` I resolved the domain name to its IP address. The provided result identified **192.232.216.135**.
 ```
 nslookup networkwalks.com
 ```
-![nslookup output](screenshots/3_nslookup.png)
+![nslookup output](nslookup-3.png)
 
 ## Task 4
 I used ```curl``` with the `-I` option to inspect the HTTP response headers. This provided additional information about the web application and exposed the WordPress REST API endpoint `/wp-json/`.
 ```
 curl -I https://networkwalks.com
 ```
-![curl output](screenshots/4_curl.png)
+![curl output](curl-4.png)
 
 ## Task 5
 Next, I used ```wafw00f``` to determine whether a Web Application Firewall was protecting the website. The result identified **ModSecurity (SpiderLabs)**.
 ```
 wafw00f networkwalks.com
 ```
-![wafw00f output](screenshots/5_wafw00f.png)
+![wafw00f output](wafw00f-5.png)
 
 ## Task 6
 Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
 ```
 dnsrecon -d networkwalks.com
 ```
-![dnsrecon output](screenshots/7_zenmap.png)
+![dnsrecon output](dnsrecon-6.png)
 
 ## 4.2 Network Scanning with Zenmap
 
