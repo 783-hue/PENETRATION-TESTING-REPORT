@@ -2,6 +2,7 @@
 
 WEEK 2 | PROJECT MODULE 1
 
+
 FOOTPRINTING & RECONNAISSANCE ATTACKS 
 WITH MULTIPLE KALI TOOLS
 
@@ -25,6 +26,7 @@ WITH MULTIPLE KALI TOOLS
 
 
 📌 **Project Overview**
+
 
 | Field | Detail |
 |---|---|
