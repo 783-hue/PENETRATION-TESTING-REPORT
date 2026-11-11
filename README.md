@@ -228,7 +228,7 @@ Finally, I learned that **reconnaissance and scanning** must always be performed
 
 # 👤 Author
 
-**Jugin Zenzele Ngobese**\
+**Jugin Zenzele Ngobese**
 Cybersecurity & Ethical Hacking Intern at Networkwalks B084
 
 LinkedIn: [https://www.linkedin.com/in/zenzele-ngobese-2b5316419/)
