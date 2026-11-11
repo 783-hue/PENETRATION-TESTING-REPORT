@@ -156,7 +156,7 @@ attacker understand the email and hosting setup.
 ```
 
                                                                                 
-📌 **Second Project Project Overview**
+📌 **Second Project Project Overview**\
 
 
 WEEK 2  |  PROJECT MODULE 5 
@@ -242,21 +242,6 @@ Based on the observations from these activities, I recommend the following secur
     Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # 5. Conclusion
 
 During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering **footprinting**, **reconnaissance and network scanning**.
@@ -270,12 +255,6 @@ The exercises showed me that **information gathering is an important part of cyb
 I also learned that **technical findings should be documented clearly**. A good cybersecurity report should explain **what was performed**, **what was discovered**, **what the observation means**, **what risk it may create**, and **what can be done to reduce that risk**.
 
 Finally, I learned that **reconnaissance and scanning** must always be performed within an authorized scope. These activities were completed as part of the assigned educational cybersecurity lab.
-
-
-
-
-
-
 
 
 # 👤 Author
