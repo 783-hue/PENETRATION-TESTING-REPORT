@@ -119,7 +119,7 @@ dnsrecon -d networkwalks.com
 ![dnsrecon output](06-dnsrecon.png)
 
                                                                                     
-📌 **Project Overview**
+📌 **Second Project Project Overview**
 
 
 WEEK 2  |  PROJECT MODULE 5 
