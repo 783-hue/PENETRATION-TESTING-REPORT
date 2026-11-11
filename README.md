@@ -81,6 +81,12 @@ First, I used ```whois``` to obtain publicly available domain registration infor
 whois networkwalks.com
 ```
 ![whois output](01-whois.png)
+**Risk** 
+```
+whois reveals the registrar, registration and expiry dates, and name servers. Here the name 
+servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates 
+and abuse contacts help with social engineering and planning.
+```
 
 ## Task 2
 I then used ```whatweb``` to identify technologies used by the website. The results identified **WordPress 7.0.4** and **WP Download Manager 3.3.58**, along with other information exposed by the website.
