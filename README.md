@@ -24,7 +24,8 @@ WITH MULTIPLE KALI TOOLS
 </p>
 
 
-📌 Project Overview
+📌 **Project Overview**
+
 | Field | Detail |
 |---|---|
 | **Pentester Name (Cybersecurity Intern)** | Jugin Zenzele Ngobese|
@@ -34,6 +35,7 @@ WITH MULTIPLE KALI TOOLS
 | **Client/Target** | 1. Networkwalks (secured written permission already)<br>2. My own local LAN Network |
 | **Permission secured from client?** | Yes |
 | **Phases covered** | **Phase 1:** Reconnaissance & Footprinting<br>**Phase 2:** Scanning & Network Discovery<br>**Phase 3-5:** In Progress |
+
 
 
 # 1. Introduction
