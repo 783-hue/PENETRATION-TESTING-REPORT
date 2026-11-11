@@ -111,28 +111,6 @@ After completing the scan, I opened the **Topology** section in Zenmap, enabled 
 ![zenmap topology output](zenmap_topology.png)
 
 
-
-
-
-
-
-
-
-# 5. Conclusion
-
-During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering **footprinting**, **reconnaissance and network scanning**.
-
-In the footprinting activity, I used six Kali Linux tools to collect information about the target domain. I learned how ```whois``` can provide domain information, ```whatWeb``` can identify web technologies, ```nslookup``` can resolve domain names, ```curl``` can inspect HTTP headers, ```wafw00f``` can identify a WAF, and ```dnsrecon``` can provide additional DNS information.
-
-In the network scanning activity, I used Zenmap to identify my local network configuration and discover active hosts. I also collected IP and MAC address information and created a network topology.
-
-The exercises showed me that **information gathering is an important part of cybersecurity**. Even before attempting to exploit a system, a security professional can learn a significant amount about an environment by carefully analyzing publicly available information and network responses.
-
-I also learned that **technical findings should be documented clearly**. A good cybersecurity report should explain **what was performed**, **what was discovered**, **what the observation means**, **what risk it may create**, and **what can be done to reduce that risk**.
-
-Finally, I learned that **reconnaissance and scanning** must always be performed within an authorized scope. These activities were completed as part of the assigned educational cybersecurity lab.
-
-
 # 5. Risk Analysis / Impact
 
 Based on the information collected during the footprinting and network scanning activities, I identified the following potential risks.
@@ -184,6 +162,39 @@ Based on the observations from these activities, I recommend the following secur
 
 9.  **Perform security testing with authorization**  
     Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 5. Conclusion
+
+During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering **footprinting**, **reconnaissance and network scanning**.
+
+In the footprinting activity, I used six Kali Linux tools to collect information about the target domain. I learned how ```whois``` can provide domain information, ```whatWeb``` can identify web technologies, ```nslookup``` can resolve domain names, ```curl``` can inspect HTTP headers, ```wafw00f``` can identify a WAF, and ```dnsrecon``` can provide additional DNS information.
+
+In the network scanning activity, I used Zenmap to identify my local network configuration and discover active hosts. I also collected IP and MAC address information and created a network topology.
+
+The exercises showed me that **information gathering is an important part of cybersecurity**. Even before attempting to exploit a system, a security professional can learn a significant amount about an environment by carefully analyzing publicly available information and network responses.
+
+I also learned that **technical findings should be documented clearly**. A good cybersecurity report should explain **what was performed**, **what was discovered**, **what the observation means**, **what risk it may create**, and **what can be done to reduce that risk**.
+
+Finally, I learned that **reconnaissance and scanning** must always be performed within an authorized scope. These activities were completed as part of the assigned educational cybersecurity lab.
+
+
+
 
 
 
