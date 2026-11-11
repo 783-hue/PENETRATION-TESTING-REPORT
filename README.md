@@ -23,7 +23,8 @@ WITH MULTIPLE KALI TOOLS
   <img src="https://img.shields.io/badge/Jugin%20%20-C00000?style=flat-square" />
 </p>
 
-**W2-PM-FINAL  |  CYBERSECURITY  |  NETWORKWALKS**
+
+📌 Project Overview
 | Field | Detail |
 |---|---|
 | **Pentester Name (Cybersecurity Intern)** | Jugin Zenzele Ngobese|
