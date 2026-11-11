@@ -164,7 +164,7 @@ WEEK 2  |  PROJECT MODULE 5
 NETWORK SCANNING WITH ZENMAP
 
 
-## 4.2 Network Scanning with Zenmap
+## 3.2 Network Scanning with Zenmap
 
 For the second activity, I used **Zenmap** to perform network discovery on my local network. The practical required me to identify my local IP address and subnet, discover live hosts, identify their IP and MAC addresses, and generate a network topology.
 
