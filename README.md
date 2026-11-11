@@ -81,12 +81,7 @@ First, I used ```whois``` to obtain publicly available domain registration infor
 whois networkwalks.com
 ```
 ![whois output](01-whois.png)
-**Observation** 
-```
-whois reveals the registrar, registration and expiry dates, and name servers. Here the name 
-servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates 
-and abuse contacts help with social engineering and planning.
-```
+
 
 ## Task 2
 I then used ```whatweb``` to identify technologies used by the website. The results identified **WordPress 7.0.4** and **WP Download Manager 3.3.58**, along with other information exposed by the website.
@@ -95,12 +90,7 @@ I then used ```whatweb``` to identify technologies used by the website. The resu
 whatweb networkwalks.com
 ```
 ![whatweb output](02-whatweb.png)
-**Observation** 
-```
-whatweb exposes the exact software and versions (here Wordpress 7.0.4 and WP Download 
-Manager 3.3.58). An attacker looks these versions up in vulnerability databases to find known 
-exploits. It also leaks the server IP and an email address.
-```
+
 
 
 ## Task 3
@@ -109,12 +99,7 @@ Using ```nslookup``` I resolved the domain name to its IP address. The provided 
 nslookup networkwalks.com
 ```
 ![nslookup output](03-nslookup.png)
-**Observation**
-```
-nslookup turns a domain name into its real IP address (192.232.216.135). Knowing the IP lets an 
-attacker scan the server directly, look up other sites on the same IP, and map the target's 
-infrastructure.
-```
+
 
 
 ## Task 4
@@ -123,24 +108,14 @@ I used ```curl``` with the `-I` option to inspect the HTTP response headers. Thi
 curl -I https://networkwalks.com
 ```
 ![curl output](04-curl.png)
-**Observation** 
-```
-HTTP headers leak the web server, caching stack and hidden endpoints (here the WordPress 
-REST API at /wp-json/). Attackers read headers to fingerprint the stack and find entry points 
-without even loading the full page.
-```
+
 ## Task 5
 Next, I used ```wafw00f``` to determine whether a Web Application Firewall was protecting the website. The result identified **ModSecurity (SpiderLabs)**.
 ```
 wafw00f networkwalks.com
 ```
 ![wafw00f output](05-wafw00f.png)
-**Observation** 
-```
-wafw00f tells an attacker if a firewall is watching. Here the site sits behind ModSecurity
-(SpiderLabs). Knowing a WAF is present shapes the whole attack: naive attempts will be blocked 
-or logged, so the attacker must adapt or try to bypass it.
-```
+
 
 ## Task 6
 Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
@@ -148,14 +123,7 @@ Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided in
 dnsrecon -d networkwalks.com
 ```
 ![dnsrecon output](06-dnsrecon.png)
-**Observation** 
-```
-dnsrecon maps the target's entire DNS footprint: mail servers, DNS software version (Bind 
-9.16.23), SPF policy and cPanel service records. Each record is a potential foothold and helps an 
-attacker understand the email and hosting setup.
-```
-````
-````
+
                                                                                 
 📌 **Second Project Project Overview**\
 
