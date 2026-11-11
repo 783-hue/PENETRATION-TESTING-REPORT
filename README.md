@@ -133,13 +133,68 @@ I also learned that **technical findings should be documented clearly**. A good 
 Finally, I learned that **reconnaissance and scanning** must always be performed within an authorized scope. These activities were completed as part of the assigned educational cybersecurity lab.
 
 
+# 5. Risk Analysis / Impact
+
+Based on the information collected during the footprinting and network scanning activities, I identified the following potential risks.
+
+| **\#** | **Risk / Finding**                           | **Evidence / Observation**                                  | **Potential Impact**                                                                                            | **Risk Level** |
+|--------|----------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|----------------|
+| 1      | Web technology information exposed           | WhatWeb identified WordPress and WP Download Manager        | Attackers may use exposed technology/version information to identify software requiring further security review | **● Medium**   |
+| 2      | Server IP address identifiable               | Nslookup resolved the domain to `192.232.216.135`           | Provides information about the network location of the web service                                              | **● Low**      |
+| 3      | HTTP technical information exposed           | Curl returned HTTP response headers and exposed `/wp-json/` | May assist technology fingerprinting and further enumeration                                                    | **● Low**      |
+| 4      | WAF technology identifiable                  | Wafw00f identified ModSecurity (SpiderLabs)                 | Reveals information about the web application’s security architecture                                           | **● Low**      |
+| 5      | DNS infrastructure information exposed       | DNSRecon identified DNS, mail and service-related records   | DNS information can help build a broader infrastructure profile                                                 | **● Medium**   |
+| 6      | Multiple live hosts visible on local network | Zenmap identified four live hosts in the example network    | Unknown or unauthorized devices may potentially be present on a network                                         | **● Medium**   |
+
+**Risk level key:** ● Critical ● Medium ● Low
+
+The risks above are observations from the footprinting and scanning exercises, not confirmed vulnerabilities.
+
+The practical exercises primarily involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these two modules.
+
+Therefore, the presence of information such as a software version, IP address or DNS record does not by itself mean that the system is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
+
+# 6. Recommendations
+
+Based on the observations from these activities, I recommend the following security improvements:
+
+1.  **Review publicly exposed technology information**  
+    Organizations should regularly review what information about their web technologies, CMS and plugins is publicly visible.
+
+2.  **Keep software updated**  
+    CMS platforms, plugins and other web technologies should be regularly updated and reviewed against current security advisories.
+
+3.  **Review HTTP headers**  
+    HTTP response headers should be reviewed to determine whether unnecessary technical information is being exposed.
+
+4.  **Review DNS records regularly**  
+    DNS records should be checked periodically to ensure that only required information and services are publicly exposed.
+
+5.  **Properly configure and monitor the WAF**  
+    Keep the WAF (ModSecurity) enabled and tuned, since it already blocks naive attacks.
+
+6.  **Perform regular internal network discovery**  
+    Organizations should periodically scan their own networks to identify active devices.
+
+7.  **Investigate unknown devices**  
+    Any unexpected device discovered during network scanning should be investigated and verified.
+
+8.  **Maintain network documentation**  
+    Network topology and device information should be documented and updated regularly.
+
+9.  **Perform security testing with authorization**  
+    Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
 
 
 
 
 
+# 👤 Author
 
+**Jugin Zenzele Ngobese**\
+Cybersecurity & Ethical Hacking Intern at Networkwalks B084
 
+LinkedIn: [https://www.linkedin.com/in/zenzele-ngobese-2b5316419/)
 
 
 
