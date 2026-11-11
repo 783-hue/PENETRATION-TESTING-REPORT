@@ -103,7 +103,7 @@ ipconfig
 ## Task 2
 I then entered the subnet into Zenmap and selected **Ping Scan** to identify active hosts.
 
-![zenmap output](screenshots/7_zenmap.png)
+![zenmap output](Windows_ipconfig.png)
 
 ## Task 3
 After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
