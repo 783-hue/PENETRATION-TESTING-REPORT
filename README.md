@@ -81,7 +81,7 @@ First, I used ```whois``` to obtain publicly available domain registration infor
 whois networkwalks.com
 ```
 ![whois output](01-whois.png)
-**Risk** 
+**Observation** 
 ```
 whois reveals the registrar, registration and expiry dates, and name servers. Here the name 
 servers point to HostGator, so an attacker instantly learns the hosting provider. Registration dates 
@@ -95,6 +95,13 @@ I then used ```whatweb``` to identify technologies used by the website. The resu
 whatweb networkwalks.com
 ```
 ![whatweb output](02-whatweb.png)
+**Observation** 
+```
+whatweb exposes the exact software and versions (here Wordpress 7.0.4 and WP Download 
+Manager 3.3.58). An attacker looks these versions up in vulnerability databases to find known 
+exploits. It also leaks the server IP and an email address.
+```
+
 
 ## Task 3
 Using ```nslookup``` I resolved the domain name to its IP address. The provided result identified **192.232.216.135**.
@@ -102,6 +109,7 @@ Using ```nslookup``` I resolved the domain name to its IP address. The provided 
 nslookup networkwalks.com
 ```
 ![nslookup output](03-nslookup.png)
+**Observation** 
 
 ## Task 4
 I used ```curl``` with the `-I` option to inspect the HTTP response headers. This provided additional information about the web application and exposed the WordPress REST API endpoint `/wp-json/`.
@@ -109,6 +117,7 @@ I used ```curl``` with the `-I` option to inspect the HTTP response headers. Thi
 curl -I https://networkwalks.com
 ```
 ![curl output](04-curl.png)
+**Observation** 
 
 ## Task 5
 Next, I used ```wafw00f``` to determine whether a Web Application Firewall was protecting the website. The result identified **ModSecurity (SpiderLabs)**.
@@ -116,6 +125,7 @@ Next, I used ```wafw00f``` to determine whether a Web Application Firewall was p
 wafw00f networkwalks.com
 ```
 ![wafw00f output](05-wafw00f.png)
+**Observation** 
 
 ## Task 6
 Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
@@ -123,6 +133,7 @@ Finally, I used ```dnsrecon``` to enumerate DNS records. The results provided in
 dnsrecon -d networkwalks.com
 ```
 ![dnsrecon output](06-dnsrecon.png)
+**Observation** 
 
                                                                                 
 📌 **Second Project Project Overview**
