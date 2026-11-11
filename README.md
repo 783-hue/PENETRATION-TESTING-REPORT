@@ -53,7 +53,7 @@ First, I used ```whois``` to obtain publicly available domain registration infor
 ```
 whois networkwalks.com
 ```
-![whois output](screenshots/1_whois.png)
+![whois output](whois-1.png)
 
 ## Task 2
 I then used ```whatweb``` to identify technologies used by the website. The results identified **WordPress 7.0.4** and **WP Download Manager 3.3.58**, along with other information exposed by the website.
